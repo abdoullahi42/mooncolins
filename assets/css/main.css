@@ -2583,6 +2583,9 @@ ol {
   .feature .section-title {
     margin-bottom: 30px;
   }
+  .feature .feature-box p {
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
@@ -2653,6 +2656,7 @@ ol {
 .feature .feature-box p {
   line-height: 26px;
   font-size: 15px;
+  margin-bottom: 20px;
 }
 
 /*======================================
