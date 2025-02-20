@@ -56,3 +56,30 @@ Author: GrayGrids
     navbarToggler.classList.toggle("active");
   });
 })();
+
+// JavaScript to handle the progress bar
+document.addEventListener("DOMContentLoaded", () => {
+  const progressBar = document.createElement("div");
+  progressBar.classList.add("progress-bar");
+  document.querySelector(".timeline").appendChild(progressBar);
+
+  const timeline = document.querySelector(".timeline");
+  const timelineSteps = document.querySelectorAll(".timeline-step");
+  const timelineHeight = timeline.offsetHeight;
+  const timelineOffsetTop = timeline.offsetTop;
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const scrollBottom = scrollTop + window.innerHeight;
+
+    // Calculate the visible portion of the timeline
+    const timelineVisibleTop = Math.max(scrollTop, timelineOffsetTop);
+    const timelineVisibleBottom = Math.min(scrollBottom, timelineOffsetTop + timelineHeight);
+
+    // Calculate the progress percentage
+    const progressPercentage = ((timelineVisibleBottom - timelineOffsetTop) / timelineHeight) * 100;
+
+    // Update the progress bar height
+    progressBar.style.height = `${Math.min(100, Math.max(0, progressPercentage))}%`;
+  });
+});
