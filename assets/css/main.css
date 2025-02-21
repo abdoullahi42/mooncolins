@@ -3346,6 +3346,123 @@ ol {
 endToken Sale CSS
 ========================================*/
 
+/*======================================
+     start token CSS
+  ========================================*/
+
+  
+  .cards {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px ;
+    width: 100%;
+    max-width: 350px; /* Maximum width for larger screens */
+    text-align: center;
+    margin: 10px auto;
+  }
+  .text{
+    text-now-wrap:wrap;
+  }
+  
+  .logo-placeholder {
+    width: 150px; /* Set the desired width */
+    height: 120px; /* Set the desired height */
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    position: relative;
+    overflow: hidden;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  .logo-image {
+    width: 100%; /* Make the image fill the width of its parent */
+    height: 99%; /* Make the image fill the height of its parent */
+    object-fit: cover; /* Ensure the image covers the entire space without distortion */
+    border-radius: 50%; /* Maintain the circular shape */
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
+  
+  h4 .queen {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 12px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  
+  .details {
+    text-align: left;
+    font-size: 14px;
+    color: #444444;
+    margin-bottom: 16px;
+  }
+  
+  .details p {
+    word-break: break-all; /* Break long words to prevent overflow */
+    overflow-wrap: break-word; /* Ensure text wraps within the container */
+    margin: 0; /
+  }
+  
+  .buy-link {
+    display: inline-block;
+    background-color: #6200ee;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-link:hover {
+    background-color: #3700b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .card {
+      padding: 16px; /* Reduce padding on smaller screens */
+    }
+  
+    h4 .queen {
+      font-size: 20px; /* Smaller font size for smaller screens */
+    }
+  
+    .description {
+      font-size: 13px; /* Smaller font size for smaller screens */
+    }
+  
+    .details {
+      font-size: 13px; /* Smaller font size for smaller screens */
+    }
+  
+    .buy-link {
+      font-size: 13px; /* Smaller font size for smaller screens */
+      padding: 8px 16px; /* Smaller padding for smaller screens */
+    }
+  }
+
+/*======================================
+     start token CSS
+  ========================================*/
 
 /*======================================
 	Road Map CSS
