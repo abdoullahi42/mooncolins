@@ -3360,6 +3360,7 @@ endToken Sale CSS
     max-width: 350px; /* Maximum width for larger screens */
     text-align: center;
     margin: 10px auto;
+    margin-bottom: 48px;
   }
   .text{
     text-now-wrap:wrap;
@@ -3376,6 +3377,11 @@ endToken Sale CSS
     animation: pulse 1.5s infinite ease-in-out;
   }
   
+  .portfolio{
+    text-align: center;
+    margin: 48px, 0;
+    margin-bottom: 48px;
+  }
   .logo-image {
     width: 100%; /* Make the image fill the width of its parent */
     height: 99%; /* Make the image fill the height of its parent */
