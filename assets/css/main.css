@@ -6132,3 +6132,25 @@ blockquote span {
     grid-template-columns: 1fr;
   }
 }
+
+/* Ensure the dropdown appears on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Remove any gap between the dropdown toggle and the menu */
+}
+
+/* Optional: Add a smooth transition effect */
+.dropdown-menu {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  display: none; /* Hide the dropdown by default */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
