@@ -5972,3 +5972,163 @@ blockquote span {
 .footer .copyright-area p a:hover {
   color: #3e80ff;
 }
+
+
+
+/*okkkkk*/
+/* General Styles */
+/* General Styles */
+/* Section Styling */
+.mqueen-section {
+  background-color: #24126a;
+  padding: 48px 20px;
+  text-align: center;
+  color: white;
+}
+
+.mqueen-section h3 {
+  font-size: 2.1rem;
+  max-width: 800px;
+  margin: 0 auto 48px;
+ 
+  text-align: center; /* Center the title */
+  color: white;
+}
+
+.mqueen-section p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 48px;
+  line-height: 1.6;
+
+}
+
+/* Call-to-Action Buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+
+
+.btn-primary {
+  background-color: #3e80ff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #24126a;
+}
+
+/* Button Hover Animations */
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mqueen-section h3 {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+
+  .mqueen-section p {
+    font-size: 1rem; /* Smaller font size for smaller screens */
+  }
+
+  .cta-buttons {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    gap: 10px;
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  .mqueen-section h3 {
+    font-size: 1.5rem; /* Even smaller font size for very small screens */
+  }
+
+  .mqueen-section p {
+    font-size: 0.9rem; /* Even smaller font size for very small screens */
+  }
+}
+
+
+ /* Section Styles */
+ .mqueens-sections {
+  background-color: #f4f7fa;
+  padding: 40px 20px;
+  text-align: center;
+ 
+}
+.centersec{
+  width:91%;
+  margin:0 auto;
+}
+
+
+.mqueens-sections h1 {
+  color: #24126a;
+  font-size: 2rem;
+  margin-bottom: 26px;
+}
+
+.mqueens-sections p {
+  color: #24126a;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 58px;
+}
+
+/* Card Grid Styles */
+.cardss-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 0 20px;
+}
+
+.cardss {
+  background-color: white;
+  border-radius: 10px;
+  padding: 12px 32px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+
+.cardss :hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+}
+
+.cardss h2 {
+  color: #3b368c;
+  font-size: 1.5rem;
+  margin-bottom: 22px;
+  margin-top:12px;
+}
+
+.cardss p {
+  color: #727272;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .cardss-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cardss-grid {
+    grid-template-columns: 1fr;
+  }
+}
