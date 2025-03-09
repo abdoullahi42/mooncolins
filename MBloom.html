@@ -1,0 +1,750 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>MoonColins</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.svg"
+    />
+   
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <style>
+    /* Back Arrow Icon Styles */
+    .back-arrow-icon {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #3e80ff;
+      color: #fff;
+      padding: 10px 12px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+    .back-arrow-icon:hover {
+      background-color: #2c5bb8;
+    }
+    .back-arrow-icon i {
+      font-size: 20px;
+    }
+    .faq-v21 {
+          padding-bottom: 80px;
+          background-color: #f4f7fa;
+        }
+      
+        @media (max-width: 767px) {
+          .faq-v2 .xs-margin {
+            margin-top: 20px !important;
+          }
+        }
+      
+        .faq-v21 .section-title {
+          margin-bottom: 60px;
+        }
+      
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .faq-v21 .section-title {
+            margin-bottom: 40px;
+          }
+        }
+      
+        @media (max-width: 767px) {
+          .faq-v21 .section-title {
+            margin-bottom: 30px;
+          }
+        }
+      
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .faq-v21 {
+            padding-bottom: 40px;
+          }
+        }
+      
+        @media (max-width: 767px) {
+          .faq-v21 {
+            padding-bottom: 30px;
+          }
+        }
+      
+        .accordion-item:first-of-type .accordion-button {
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+          padding-right: 40px;
+        }
+      
+        .accordion-item:last-of-type .accordion-button.collapsed {
+          border-bottom-right-radius: 4px;
+          border-bottom-left-radius: 4px;
+        }
+      
+        .accordion-item .accordion-button {
+          border-radius: 4px;
+          font-size: 17px;
+          font-weight: 500;
+          width: 100%;
+          display: block;
+          overflow: hidden;
+          border: none;
+          padding: 15px 25px;
+          padding-right: 40px;
+          background-color: #fff;
+        }
+      
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .accordion-item .accordion-button {
+            padding: 18px 20px;
+            padding-right: 40px;
+          }
+        }
+      
+        @media (max-width: 767px) {
+          .accordion-item .accordion-button {
+            padding: 15px 20px;
+            padding-right: 40px;
+          }
+        }
+      
+        .accordion-item .accordion-button .title {
+          font-size: 14px;
+          position: relative;
+          font-weight: 600;
+          float: left;
+          line-height: 25px;
+        }
+      
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .accordion-item .accordion-button .title {
+            font-size: 14px;
+          }
+        }
+      
+        @media (max-width: 767px) {
+          .accordion-item .accordion-button .title {
+            font-size: 14px;
+          }
+        }
+      
+        .accordion-item .accordion-button i {
+          font-size: 15px;
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          position: relative;
+          top: 0;
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          right: 20px;
+        }
+      
+        .accordion-button:not(.collapsed) {
+          color: #fff;
+          background-color: #3e80ff;
+          border-radius: 4px 4px 0 0;
+        }
+      
+        .accordion-button:not(.collapsed) i::before {
+          content: "\eb2e";
+          font-family: lineIcons;
+        }
+      
+        .accordion-button::after {
+          display: none;
+        }
+      
+        .accordion-collapse {
+          border: none;
+        }
+      
+        .accordion-body {
+          border-radius: 0 0 4px 4px;
+          padding: 25px;
+          background-color: #fff;
+        }
+      
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .accordion-body {
+            padding: 30px;
+          }
+        }
+      
+        @media (max-width: 767px) {
+          .accordion-body {
+            padding: 20px;
+          }
+        }
+      
+        .accordion-body p {
+          margin: 0;
+          margin-bottom: 20px;
+          color: #777;
+        }
+      
+        .accordion-body p:last-child {
+          margin: 0;
+        }
+      
+        .accordion-item {
+          margin-bottom: 20px;
+          -webkit-box-shadow: 0px 0px 20px #00000007;
+          box-shadow: 0px 0px 20px #00000007;
+          border-radius: 4px;
+        }
+      
+        .accordion-item:last-child {
+          margin: 0;
+        }
+  </style>
+  
+
+  <body>
+
+<section>
+  <a href="index.html" class="back-arrow-icon" aria-label="Go Back">
+    <i class="fas fa-arrow-left"></i>
+  </a>
+
+    <section class="mqueen-section">
+        <h3>$MBLOOM Is Backed And Sponsored By MoonColins Ecosystem</h3>
+        <p>
+            
+            Seed &amp; Bloom Program is a developmental series that educates kids to grow and bloom into
+            compassionate and resilient individuals who consciously create their own reality. This series also
+            helps adults – parents, grandparents, teachers, doctors, carers, counselors, and others to acquire
+            beneficial knowledge which is [also] transferrable to children. This knowledge will empower them to
+            realize the immense power of their minds in shaping their reality, allowing them to transcend past
+            and present struggles. Catch up with us on our official YouTube and Tik-Tok channels
+        </p>
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-primary" disabled>Coming Soon - $MBLOOM</a>
+          <a href="assets/$MBLOOM Paper.pdf Paper.pdf"  download="" class="btn btn-secondary">$MBLOOM Paper</a>
+        </div>
+      </section>
+    
+      <section class="mqueens-sections">
+        <div class="centersect"></div>
+        <h1>Why You Should Become $MBloom Holder</h1>
+        <p>Holding $MQUEEN means becoming part of a thriving, forward-thinking community that values innovation, empowerment, and long-term growth in the crypto space.</p>
+        <div class="cardss-grid">
+          <!-- Card 1 -->
+          <div class="cardss">
+            <h2>Empowering Children Through Decentralization</h2>
+            <p>
+                $MBLOOM isn’t just another token; it is part of a movement that helps children understand
+                the power of their thoughts and minds in shaping their realities. By holding $MBLOOM,
+                supporters contribute to a project that nurtures young minds. $MBLOOM will be the utility
+                token for all premium education series</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="cardss">
+            <h2> Integration with the MoonColins Ecosystem</h2>
+            <p>
+                As part of the MoonColins ecosystem, $MBLOOM benefits from an established community,
+                potential utility across various projects, and long-term sustainability through interconnected
+                initiatives</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="cardss">
+            <h2> Real-World Impact &amp; Educational Purpose</h2>
+            <p>
+                Unlike many tokens, $MBLOOM supports a tangible mission—funding Seed and Bloom,
+                which provides children and their caregivers with knowledge about conscious creation,
+                mindfulness, and empowerment</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="cardss">
+            <h2> Early Adoption Advantage</h2>
+            <p>
+                Getting in early means potential benefits as the project grows. With Seed and Bloom gaining
+                traction, the demand for $MBLOOM may increase, creating opportunities for early
+                supporters</p>
+          </div>
+          <!-- Card 5 -->
+          <div class="cardss">
+            <h2> A Token with Purpose, Not Just Speculation</h2>
+            <p>
+                Many crypto projects are purely profit-driven, but $MBLOOM aligns financial incentives with
+                a meaningful cause—supporting children’s development while embracing blockchain
+                technology.</p>
+          </div>
+        
+        </div>
+      </section>
+      <section class="mqueen-section">
+        <h3> $MBLOOM Project Team</h3>
+        <p>
+           
+
+            The $MBLOOM team is made up of parents who have lived through struggle and overcome it. They
+            have a focus on inner growth and want to make a big difference in the world. They care deeply
+            about children [the future] and believe in helping them grow with the right knowledge and mindset.
+        </p>
+        </section>
+      <div class="portfolio section" id="our-portfolio">
+    
+         <h2 class="wow fadeInUp portfolio" data-wow-delay=".4s" >$MBLOOM Profile</h2>
+      <div class="cards" >
+       
+        <div class="logo-placeholder">
+          <img src="assets/logo.jpg" alt="MoonColins" class="logo-image" />
+        </div>
+        <h4 class="queen">MoonColins MBLOOM</h4>
+        <p class="description">
+            [Backed by MoonColins Ecosystem] Seed &amp; Bloom Program is a developmental series that educates
+            kids to grow and bloom into compassionate and resilient individuals who consciously create their
+            own reality. This series also helps adults—parents, grandparents, teachers, doctors, carers,
+            counselors, and others to acquire beneficial knowledge which is [also] transferrable to children. This
+            knowledge will empower them to realize the immense power of their minds in shaping their reality,
+            allowing them to transcend past and present struggles. Catch up with us on our YouTube and Tik-Tok
+            channels.
+        </p>
+        <div class="details">
+          <p><strong>Ticker:</strong> $MBLOOM</p>
+          <p><strong>Network:</strong> Solana</p>
+          <p class="text"><strong>Contract Address:</strong>.. Coming soon!.</p>
+        </div>
+        <!-- <a href="https://pump.fun/coin/HmqmrDxQwXnrU8WwSGQPTjmZPvE72FFdoigFKJZMpump" class="buy-link">Buy $MQUEEN</a> -->
+      </div>
+    </div>
+      <section class="start-process section" >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title">
+                <h2 class="wow fadeInUp" data-wow-delay=".4s">$MBLOOM Tokenomics</h2>
+                <p class="wow fadeInUp" data-wow-delay=".6s">
+                  Our tokenomics bears the token economy of MoonColins Ecosystem
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="single-process">
+                <span class="serial">01</span>
+                <h3>Initial Buy</h3>
+                <p>
+                  To prevent market manipulation and ensure token prosperity, the initial buy for all tokens is set at
+                  20% of the total supply of 1,000,000,000
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="single-process">
+                <span class="serial">02</span>
+                <h3>$MBLOOM Project Team</h3>
+                <p>
+                    25% of the initial buy (5% of token supply) is allocated to the MPT. It is vested and released gradually
+                    to prevent market disruption and ensure a stable token price
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="single-process">
+                <span class="serial">03</span>
+                <h3> Founding Team Members</h3>
+                <p>
+    
+                  25% of the initial buy (5% of token supply) is allocated to founding team members. It is vested and
+    released gradually to prevent market disruption and ensure a stable token price
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="single-process">
+                <span class="serial">04</span>
+                <h3> Development and Promotion</h3>
+                <p>
+                  50% of the initial buy (10% of token supply) is allocated to fueling the growth and adoption of the
+    token. It is vested and released gradually to prevent market disruption and ensure a stable token
+    price.
+                 </p>
+              </div>
+            </div>
+        </div>
+      </section>
+      
+                  
+      <section class="faq-v21 section" id="FaqsV2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title">
+                <h2 class="wow fadeInUp" data-wow-delay=".4s">
+                  Frequently Asked Questions
+                </h2>
+                <p class="wow fadeInUp" data-wow-delay=".6s">
+                  Still have questions? Browse our FAQs below to find answers to
+                  common queries about MoonColins, our platforms, and our
+                  community.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="accordion" id="accordionExample1V2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading11V2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse11V2"
+                      aria-expanded="false"
+                      aria-controls="collapse11V2"
+                    >
+                      <span class="title">What is $MBLOOM?</span
+                      ><i class="lni lni-plus"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse11V2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading11V2"
+                    data-bs-parent="#accordionExample1V2"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        
+                        $MBLOOM is a token designed to empower children and communities by promoting the power of
+                        thoughts, mindfulness, and conscious creation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading21V2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse21V2"
+                      aria-expanded="false"
+                      aria-controls="collapse21V2"
+                    >
+                      <span class="title">How can I buy $MBLOOM?</span
+                      ><i class="lni lni-plus"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse21V2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading21V2"
+                    data-bs-parent="#accordionExample1V2"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        
+You can purchase $MBLOOM through our official platform or supported decentralized exchanges
+(DEXs).  Stay tuned for official announcements on where and how to buy.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading31V2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse31V2"
+                      aria-expanded="false"
+                      aria-controls="collapse31V2"
+                    >
+                      <span class="title">What makes $MBLOOM different from other tokens?</span
+                      ><i class="lni lni-plus"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse31V2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading31V2"
+                    data-bs-parent="#accordionExample1V2"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        
+                        Unlike many tokens that exist purely for speculation, $MBLOOM is purpose-driven. It is connected to
+                        Seed and Bloom, a project focused on empowering adults and children with knowledge about
+                        mindfulness, abundance, and the power of their minds. Holding $MBLOOM means supporting this
+                        vision while being part of a growing decentralized ecosystem.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading41V2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse41V2"
+                      aria-expanded="false"
+                      aria-controls="collapse41V2"
+                    >
+                      <span class="title"> What blockchain network does $MBLOOM operate on?</span
+                      ><i class="lni lni-plus"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse41V2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading41V2"
+                    data-bs-parent="#accordionExample1V2"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                       
+$MBLOOM is a utility token with meme culture that operates on Solana, ensuring security,
+scalability, and interoperability within the MoonColins Ecosystem.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading51V2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse51V2"
+                      aria-expanded="false"
+                      aria-controls="collapse51V2"
+                    >
+                      <span class="title">What is the total supply of $MBLOOM?</span
+                      ><i class="lni lni-plus"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse51V2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading51V2"
+                    data-bs-parent="#accordionExample1V2"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        The total supply of $MBLOOM is 1,000,000,000 tokens, with allocations for development,
+                        community incentives, and long-term growth.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 xs-margin">
+              <div class="accordion" id="accordionExample1V2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading61V2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse61V2"
+                      aria-expanded="false"
+                      aria-controls="collapse61V2"
+                    >
+                      <span class="title">Is there a vesting schedule for the project team and founders?</span
+                      ><i class="lni lni-plus"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse61V2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading61V2"
+                    data-bs-parent="#accordionExample1V2"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Yes, to maintain price stability and prevent market manipulation, tokens allocated to the project
+                        team and founding members are vested and gradually released.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading71V2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse71V2"
+                      aria-expanded="false"
+                      aria-controls="collapse71V2"
+                    >
+                      <span class="title">How does $MBLOOM contribute to Seed and Bloom?</span
+                      ><i class="lni lni-plus"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse71V2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading71V2"
+                    data-bs-parent="#accordionExample1V2"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        
+$MBLOOM supports the Seed and Bloom Project by funding for such program and educational
+experiences.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading18V2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse18V2"
+                      aria-expanded="false"
+                      aria-controls="collapse18V2"
+                    >
+                      <span class="title">How is $MBLOOM used within the MoonColins Ecosystem?</span
+                      ><i class="lni lni-plus"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse18V2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading18V2"
+                    data-bs-parent="#accordionExample1V2"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        $MBLOOM integrates with MoonColins&#39; products and service, providing access to exclusive offers
+like revenue sharing, events, governance rights, and participation in ecosystem-driven initiatives.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading19V2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse19V2"
+                      aria-expanded="false"
+                      aria-controls="collapse19V2"
+                    >
+                      <span class="title">Where can I find the official $MBLOOM contract address?</span
+                      ><i class="lni lni-plus"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse19V2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading9V2"
+                    data-bs-parent="#accordionExample1V2"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        
+The official contract address for $MBLOOM will be available on website and Telegram chat.  Always
+verify the contract before making transactions to avoid scams
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading101V2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse101V2"
+                      aria-expanded="false"
+                      aria-controls="collapse101V2"
+                    >
+                      <span class="title">  How can I get involved with the $MBLOOM community?</span
+                      ><i class="lni lni-plus"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse101V2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading101V2"
+                    data-bs-parent="#accordionExample1V2"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                      
+                        Join our community in Telegram, X (twitter), and other social platforms to stay updated, participate
+                        in discussions, and engage with fellow $MBLOOM holders.
+                      </p>
+                    </div>
+                  </div>
+                </div><!---->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading1011V2">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse1011V2"
+                        aria-expanded="false"
+                        aria-controls="collapse1011V2"
+                      >
+                        <span class="title">Who are the team members behind $MBLOOM?</span
+                        ><i class="lni lni-plus"></i>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse1011V2"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading1011V2"
+                      data-bs-parent="#accordionExample1V2"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                        
+                            
+                            The $MBLOOM team consists of experienced professionals in blockchain, marketing, and community
+                            building.  Learn more about our core members in the Project Team section.
+                        </p>
+                      </div>
+                    </div>
+                  </div><!---->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <style>
+       
+      </style>
+    
+    <!--mqueens-->
+</section>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/tiny-slider.js"></script>
+<script src="assets/js/glightbox.min.js"></script>
+<script src="assets/js/count-up.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
